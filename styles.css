@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+header {
+	background-color: green;
+	height: 12vh;
+}
+
+h1 {
+	margin: 0!important;
+	font-size: 2.5rem;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.main-title {
+	width: 100%;
+	height: 8vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-bar {
+	width: 100%;
+	height: 4vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	width: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0!important;
+	padding: 0!important;
+}
+
+li {
+	list-style-type: none;
+	width: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 22px;
+	padding: 0 1.5vw;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.services-item {
+	position: relative;
+}
+
+.submenu {
+	position: absolute;
+	/*z-index: 2;*/
+	width: 100%;
+	height: 30vh;
+	/*visibility: hidden;*/
+	display: none;
+	background-color: red;
+}
+
+li:hover {
+	background-color: black;
+	color:white;
+}
+
+.services-item:hover ~ .submenu {
+	/*visibility: visible;*/
+	display: block;
+	left: 0;
+	top: 12vh;
+	margin: 0;
+}
+
+.submenu:hover {
+	display: block;
+	left: 0;
+	top: 12vh;
+	margin: 0;
+}
+
+li:hover {
+	cursor: pointer;
+}
+
+.main-area {
+	width: 100%;
+	height: auto;
+	min-height: 81vh;
+	display: flex;
+}
+
+main {
+	width: 85%;
+	height: auto;
+	min-height: 81vh;
+	background-color: purple;
+}
+
+aside {
+	height: auto;
+	min-height: 81vh;
+	width: 15%;
+	background-color: blue;
+}
+
+footer {
+	width: 100%;
+	height: 7vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: orange;
+}
+
+h5 {
+	margin: 0!important;
+	font-size: 1.65rem;
+	font-family: 'Fira Sans', sans-serif;
+}
